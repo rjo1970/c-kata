@@ -1,8 +1,8 @@
-FROM ubuntu:latest
+FROM ubuntu:xenial
 
 RUN apt-get update -qq && \
     apt-get upgrade -y && \
-    apt-get install -y build-essential
+    apt-get install -y build-essential python
 RUN apt-get install -y cmake libgtest-dev valgrind \
     git pkg-config automake libtool
 
